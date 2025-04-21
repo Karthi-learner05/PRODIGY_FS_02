@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="asset/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="asset/emp-logo.png" type="image/x-icon">
+    <script type="module" src="index.js"></script>
+</head>
+<body>
+    <div class="alert-main " id="success">
+        <div class="alert-box" >
+            <h1>CONGRATULATIONS</h1>
+            <p>Successfully logged in</p>
+            <button id="alert-ok-btn-s">Dashboard</button>
+        </div>
+    </div>
+    <div class="alert-main failure" id="failure">
+        <div class="alert-box" >
+            <h1>SORRY</h1>
+            <p id="inn">Incorrect Credentials</p>
+            <button id="alert-ok-btn-f">Re-enter</button>
+        </div>
+    </div>
+    <div class="main-body">
+        <div class="header">
+            <div class="logo">
+                <a href="index.html"><img src="asset/emp-name.png" alt="LOGO"></a>
+            </div>
+        </div>
+        <div class="main-box">
+            <div class="login-box">
+                <h1>LOG IN</h1>
+                <div class="input-box">
+                    <label for="mail">Username</label><br>
+                    <input type="email" name="mail" id="login-mail" placeholder="Email" required><br>
+                    <label for="pass">Password</label><br>
+                    <input type="password" name="pass" id="login-pass" placeholder="Password" required>
+                </div>
+                <div class="submit">
+                    <button type="submit" id="submit-btn">LOG IN</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <h3><i class="fa fa-copyright" aria-hidden="true"></i>2025 Employee Management System | Karthikeyan S</h3>
+        </div>
+        <script src="index.js"></script>
+    </div>
+</body>
+</html>

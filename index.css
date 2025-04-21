@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.main-body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(asset/emp_bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.header{
+    width: 100%;
+}
+.logo{
+    margin: 1rem 5rem;
+    justify-self: flex-end;
+    background-color: rgba(106, 176, 226, 0.288);
+    border-radius: 1rem;
+}
+.logo img{
+    width: 9rem;
+    height: 3rem;
+}
+.main-box{
+    width: 20rem;
+    height: 20rem;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 5rem;
+}
+.footer{
+    align-self: center;
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(29, 28, 28, 0.671);
+    color: white;
+    text-align: center;
+}
+.login-box{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.836);
+    border-radius: 2rem;
+    border: 1px solid rgba(128, 128, 128, 0.371);
+}
+.login-box h1{
+    text-align: center;
+    margin: 1rem;
+}
+.input-box{
+    margin: 1rem;
+}
+.input-box input{
+    width: 18rem;
+    height: 2rem;
+    border-radius: 2rem;
+    padding: 1rem;
+    border: 1px solid gray;
+    margin-bottom: 1rem;
+}
+.input-box input:focus{
+    outline: 1px solid royalblue;
+}
+.input-box label{
+    margin: 0.5rem;
+}
+.submit button{
+    width: 10rem;
+    height: 2rem;
+    margin-left: 5rem;
+    background-color: rgb(3, 95, 244);
+    outline: none;
+    border: 1px solid rgb(3, 95, 244);
+    color: white;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+.alert-main{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(23, 23, 25, 0.692);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    display: none;
+}
+.alert-box{
+    width: 25rem;
+    height: 15rem;
+    background-color: white;
+    border-radius: 3rem;
+    padding: 2rem;
+    position: relative;
+    border: 1px solid gray;
+}
+.alert-box h1{
+    justify-self: center;
+}
+.alert-box p{
+    color: grey;
+    text-align: center;
+    margin-top: 2rem;
+}
+.alert-box button{
+    cursor: pointer;
+    justify-self: center;
+    align-self: center;
+    position: absolute;
+    bottom: 2rem;
+    left: 9rem;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    background-color: rgb(3, 95, 244);
+    border: 1px solid rgb(3, 95, 244);
+    color: white;
+}
+
+@media (max-width :600px) {
+    .main-body{
+        background-position: center;
+    }
+    .footer{
+        font-size: x-small;
+    }
+    .logo{
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 768px) and (min-width:401px) {
+    .main-body {
+        background-position: center;
+    }
+    .logo{
+        margin: 1rem;
+    }
+}

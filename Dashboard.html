@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="asset/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="asset/emp-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="Dashboard.css">
+    <script type="module" src="Dashboard.js"></script>
+</head>
+<body>
+    <div id="alert-box-add" class="alert-box add">
+        <div class="co" id="co">
+            <p><div class="tick"><i class="fa fa-check" aria-hidden="true" style="color: green;font-size: xx-large;"></i></div>
+                <div class="txt"><h5 id="add-text" style="color: rgb(1, 62, 115);">USER ADDED SUCCESSFULLY</h5></div></p>
+        </div>
+        <div id="progressBar-add" class="loading-bar add"></div>
+    </div>
+    <div id="alert-box-edit" class="alert-box edit">
+        <div class="co" id="co">
+            <p><div class="tick"><i class="fa fa-pencil" aria-hidden="true" style="color: rgb(228, 228, 113);font-size: xx-large;"></i></div>
+                <div class="txt"><h5 id="add-text" style="color: rgb(1, 62, 115);">USER EDITED SUCCESSFULLY</h5></div></p>
+        </div>
+        <div id="progressBar-edit" class="loading-bar edit"></div>
+    </div>
+    <div id="alert-box-del" class="alert-box del">
+        <div class="co" id="co">
+            <p><div class="tick"><i class="fa fa-trash-o" aria-hidden="true" style="color: tomato;"></i></div>
+                <div class="txt"><h5 id="add-text" style="color: rgb(1, 62, 115);">USER DELETED SUCCESSFULLY</h5></div></p>
+        </div>
+        <div id="progressBar-del" class="loading-bar del"></div>
+    </div>
+    <div class="main-body">
+        <div class="header">
+            <div class="logo">
+                <a href="Dashboard.html"><img src="asset/emp-name.png" alt="LOGO"></a>
+            </div>
+        </div>
+        <div class="input-form">
+            <form action="" id="frm">
+                <h1>EMPLOYEE DETAILS</h1>
+                <input type="hidden" id="id">
+                <div class="input-box">
+                    <div class="input">
+                        <label for="name">Name  </label>
+                        <input type="text" id="name" placeholder="Fullname" required>
+                    </div>
+                    <div class="input">
+                        <label for="age">AGE    </label>
+                        <input type="number" min="19" max="60" id="age" placeholder="Current age" required>
+                    </div>
+                    <div class="input">
+                        <label for="gender">Gender  </label>
+                        <select name="gender" id="gender" required>
+                            <option value="">--Select</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <label for="role">Role  </label>
+                        <select name="role" id="role" required>
+                            <option value="">--Select</option>
+                            <option value="Developer">Developer</option>
+                            <option value="Tester">Tester</option>
+                            <option value="Network Engineer">Network Engineer</option>
+                            <option value="Sales Executive">Sales Executive</option>
+                            <option value="HR">HR</option>
+                            <option value="Manager">Manager</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <label for="city">City</label>
+                        <input type="text" id="city" placeholder="Current city" required>
+                    </div>
+                    <div class="input">
+                        <label for="mail">E-mail  </label>
+                        <input type="email" id="mail" placeholder="Work e-mail" required>
+                    </div>
+                </div>
+                <div class="submit">
+                    <button id="sbm-btn" type="submit">CREATE</button>
+                </div>
+            </form>
+        </div>
+        <div class="table-box">
+            <table>
+                <thead>
+                    <th class="s-no">S.No</th>
+                    <th class="n-a-m-e">NAME</th>
+                    <th class="e-m">E-Mail</th>
+                    <th class="a-g-e">AGE</th>
+                    <th class="g-e-n">GENDER</th>
+                    <th class="c-t">CITY</th>
+                    <th class="r-o">ROLE</th>
+                    <th class="e-d">ACTIONS</th>
+                </thead>
+                <tbody id="tblbody">
+                </tbody>
+            </table>
+        </div>
+        <div class="footer">
+            <h3><i class="fa fa-copyright" aria-hidden="true"></i>2025 Employee Management System | Karthikeyan S</h3>
+        </div>
+    </div>
+</body>
+</html>
